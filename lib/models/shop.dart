@@ -8,25 +8,29 @@ class Shop extends ChangeNotifier{
       name: "Product 1",
       price:199.79,
       description:"Item Description goes here like this...........",
+      imagePath: 'assets/images/hoodie.png'
     ),
     Product(
       name: "Product 2",
       price:169.00,
       description:"Item Description",
+      imagePath: 'assets/images/shades.png'
     ),
     Product(
       name: "Product 3",
       price:99.99,
       description:"Item Description",
+      imagePath: 'assets/images/shoes.png'
     ),
     Product(
       name: "Product 4",
       price:799.99,
       description:"Item Description",
+      imagePath: 'assets/images/watch.png'
     ),
   ];
   //user cart
-  List<Product> _cart=[];
+  final List<Product> _cart=[];
 
   //get product list
   List<Product> get shop => _shop;
